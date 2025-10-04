@@ -1,0 +1,11 @@
+<h2>Flight Details</h2>
+<p><strong>{{ flight.flight_name }}</strong></p>
+<p>Price: ${{ flight.price }}</p>
+<p>Departure: {{ flight.departure_time }}</p>
+<p>Arrival: {{ flight.arrival_time }}</p>
+<p>{{ flight.description }}</p>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.submit }}
+</form>

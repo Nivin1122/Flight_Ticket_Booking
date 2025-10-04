@@ -1,0 +1,7 @@
+<h2>Welcome, Admin {{ current_user.username }}!</h2>
+<a href="{{ url_for('admin.logout') }}">Logout</a>
+<br>
+<a href="{{ url_for('admin.add_flight') }}">Add Flight</a>
+
+<br>
+<a href="{{ url_for('admin.all_bookings') }}">View All Bookings</a>

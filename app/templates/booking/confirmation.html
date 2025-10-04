@@ -1,0 +1,8 @@
+<h2>Booking Confirmed!</h2>
+<p>Flight: {{ booking.flight.flight_name }}</p>
+<p>Price: ${{ booking.flight.price }}</p>
+<p>Departure: {{ booking.flight.departure_time }}</p>
+<p>Arrival: {{ booking.flight.arrival_time }}</p>
+<p>Status: {{ booking.status }}</p>
+
+<a href="{{ url_for('main.index') }}">Back to Flights</a>

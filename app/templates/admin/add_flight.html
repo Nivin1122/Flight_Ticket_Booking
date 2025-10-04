@@ -1,0 +1,12 @@
+
+<h2>Add Flight</h2>
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.flight_name.label }} {{ form.flight_name }}<br>
+    {{ form.flight_image.label }} {{ form.flight_image }}<br>
+    {{ form.price.label }} {{ form.price }}<br>
+    {{ form.departure_time.label }} {{ form.departure_time }}<br>
+    {{ form.arrival_time.label }} {{ form.arrival_time }}<br>
+    {{ form.description.label }} {{ form.description }}<br>
+    {{ form.submit }}
+</form>
